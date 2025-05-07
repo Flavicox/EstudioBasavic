@@ -1,3 +1,5 @@
+import {Link} from "react-router";
+
 const CallToAction = () => {
     return (
         <section className="bg-[#65B2CC] text-white py-20" id="contacto">
@@ -17,12 +19,12 @@ const CallToAction = () => {
                     >
                         Escríbenos por WhatsApp
                     </a>
-                    <a
-                        href="/contacto"
+                    <Link
+                        to="/contacto"
                         className="border-2 border-white text-white font-semibold px-6 py-3 rounded hover:bg-white hover:text-[#2C4375] transition"
                     >
                         Ir a contacto
-                    </a>
+                    </Link>
                 </div>
             </div>
         </section>

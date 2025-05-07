@@ -15,12 +15,12 @@ const HeroSection = () => {
                     >
                         Conoce nuestros servicios
                     </a>
-                    <a
-                        href="/productos"
-                        className="border-2 border-[#65B2CC] text-[#65B2CC] font-semibold px-6 py-3 rounded hover:bg-[#65B2CC] hover:text-white transition"
-                    >
-                        Ver productos 3D
-                    </a>
+                    {/*<a*/}
+                    {/*    href="/productos"*/}
+                    {/*    className="border-2 border-[#65B2CC] text-[#65B2CC] font-semibold px-6 py-3 rounded hover:bg-[#65B2CC] hover:text-white transition"*/}
+                    {/*>*/}
+                    {/*    Ver productos 3D*/}
+                    {/*</a>*/}
                 </div>
             </div>
         </section>
