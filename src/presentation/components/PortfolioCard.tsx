@@ -6,14 +6,24 @@ interface PortfolioCardProps {
     description: string;
 }
 
-const PortfolioCard = ({ title, location, year, image, description }: PortfolioCardProps) => {
+const PortfolioCard = ({ title, image }: PortfolioCardProps) => {
     return (
-        <div className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition">
-            <img src={image} alt={title} className="w-full h-80 object-cover" />
-            <div className="p-4">
-                <h3 className="text-xl font-semibold text-[#2C4375]">{title}</h3>
-                <p className="text-sm text-gray-500 mb-2">{location} • {year}</p>
-                <p className="text-gray-600 text-sm">{description}</p>
+        <div className="relative group w-full h-80 overflow-hidden ">
+            {/* Imagen */}
+            <img
+                src={image}
+                alt={title}
+                className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+            />
+
+            {/* Overlay oscuro al hacer hover */}
+            <div className="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+
+            {/* Caja con título, aparece en hover */}
+            <div className="absolute bottom-0 left-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                <div className="bg-black/80 text-white p-2">
+                    <h3 className="text-md uppercase">{title}</h3>
+                </div>
             </div>
         </div>
     );

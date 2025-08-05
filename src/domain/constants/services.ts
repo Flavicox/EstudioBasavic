@@ -34,4 +34,9 @@ export const SERVICES: Service[] = [
         description: "Consultoría experta para tomar decisiones técnicas acertadas en tu proyecto.",
         icon: FaTools,
     },
+    {
+        title: "Asesorías técnicas",
+        description: "Consultoría experta para tomar decisiones técnicas acertadas en tu proyecto.",
+        icon: FaTools,
+    },
 ];
