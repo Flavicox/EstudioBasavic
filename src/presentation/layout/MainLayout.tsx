@@ -8,8 +8,8 @@ const MainLayout = () => {
 
     // Listas de rutas para cada tipo de header
     const scrollRoutes = ["/", "/inicio"];
-    const transparentRoutes = ["/portafolio"];
-    const whiteRoutes = ["/contacto", "/nosotros"];
+    const transparentRoutes = ["/noDefined"];
+    const whiteRoutes = ["/contacto", "/nosotros","/portafolio"];
 
     // Determinar el modo según la ruta
     const getHeaderMode = (): "scroll" | "transparent" | "white" => {

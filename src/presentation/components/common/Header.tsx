@@ -78,7 +78,14 @@ export const Header = ({ mode = "white" }: HeaderProps) => {
                     >
                         Nosotros
                     </NavLink>
-                    <a href="#portafolio" className={baseLink}>Portafolio</a>
+                    <NavLink
+                        to="/portafolio"
+                        className={({ isActive }) =>
+                        `${baseLink} ${isActive ? activeLink : ""}`
+                        }
+                    >
+                        Portafolio
+                    </NavLink>
                     <a href="#productos" className={baseLink}>Productos</a>
                     <NavLink
                         to="/contacto"

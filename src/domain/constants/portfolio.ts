@@ -4,6 +4,7 @@ interface PortfolioItem {
     year: string;
     image: string;
     description: string;
+    projectType: string;
 }
 
 export const PORTFOLIO_ITEMS: PortfolioItem[] = [
@@ -13,6 +14,7 @@ export const PORTFOLIO_ITEMS: PortfolioItem[] = [
         year: "2024",
         image: "/EspaciosComercialesPizarro.jpg",
         description: "Diseño para renovación de espacio comercial en el centro histórico de Trujillo.",
+        projectType: "arquitectura-comercial",
     },
     {
         title: "Diseño de Proyecto Residencial \n",
@@ -20,6 +22,7 @@ export const PORTFOLIO_ITEMS: PortfolioItem[] = [
         year: "2022",
         image: "/ProyectoResidencial.jpg",
         description: "Diseño de proyecto de vivienda unifamiliar",
+        projectType: "diseño-residencial",
     },
     {
         title: "Servicio de Renderización y Visualización 3D",
@@ -27,6 +30,7 @@ export const PORTFOLIO_ITEMS: PortfolioItem[] = [
         year: "2019",
         image: "/EspaciosComerciales.png",
         description: "Proyectos trabajados con empresas de publicidad",
+        projectType: "representacion-arquitectonica",
     },
     {
         title: "Diseño de espacios comerciales\n",
@@ -34,6 +38,7 @@ export const PORTFOLIO_ITEMS: PortfolioItem[] = [
         year: "2024",
         image: "/EspaciosComercialesPizarro.jpg",
         description: "Diseño para renovación de espacio comercial en el centro histórico de Trujillo.",
+        projectType: "arquitectura-comercial",
     },
     {
         title: "Diseño de Proyecto Residencial \n",
@@ -41,6 +46,7 @@ export const PORTFOLIO_ITEMS: PortfolioItem[] = [
         year: "2022",
         image: "/ProyectoResidencial.jpg",
         description: "Diseño de proyecto de vivienda unifamiliar",
+        projectType: "diseño-residencial",
     },
     {
         title: "Servicio de Renderización y Visualización 3D",
@@ -48,5 +54,6 @@ export const PORTFOLIO_ITEMS: PortfolioItem[] = [
         year: "2019",
         image: "/EspaciosComerciales.png",
         description: "Proyectos trabajados con empresas de publicidad",
+        projectType: "representacion-arquitectonica",
     },
 ];
