@@ -69,7 +69,15 @@ export const Header = ({ mode = "white" }: HeaderProps) => {
                     >
                         Inicio
                     </NavLink>
-                    <a href="#servicios" className={baseLink}>Servicios</a>
+                    <NavLink
+                        to="/nosotros"
+                        end
+                        className={({ isActive }) =>
+                            `${baseLink} ${isActive ? activeLink : ""}`
+                        }
+                    >
+                        Nosotros
+                    </NavLink>
                     <a href="#portafolio" className={baseLink}>Portafolio</a>
                     <a href="#productos" className={baseLink}>Productos</a>
                     <NavLink
@@ -90,7 +98,9 @@ export const Header = ({ mode = "white" }: HeaderProps) => {
                         <NavLink to="/" end onClick={() => setMenuOpen(false)}>
                             Inicio
                         </NavLink>
-                        <a href="#servicios" onClick={() => setMenuOpen(false)}>Servicios</a>
+                        <NavLink to="/nosotros" onClick={() => setMenuOpen(false)}>
+                            Nosotros
+                        </NavLink>
                         <a href="#portafolio" onClick={() => setMenuOpen(false)}>Portafolio</a>
                         <a href="#productos" onClick={() => setMenuOpen(false)}>Productos</a>
                         <NavLink to="/contacto" onClick={() => setMenuOpen(false)}>
