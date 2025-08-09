@@ -8,15 +8,25 @@ const MainLayout = () => {
 
     // Listas de rutas para cada tipo de header
     const scrollRoutes = ["/", "/inicio"];
-    const transparentRoutes = ["/noDefined"];
-    const whiteRoutes = ["/contacto", "/nosotros","/portafolio"];
+    const whiteRoutes = ["/contacto", "/nosotros", "/portafolio"];
 
     // Determinar el modo según la ruta
     const getHeaderMode = (): "scroll" | "transparent" | "white" => {
         if (scrollRoutes.includes(path)) return "scroll";
-        if (transparentRoutes.includes(path)) return "transparent";
+
+        if (path.startsWith("/portafolio/")) return "transparent";
+
         if (whiteRoutes.includes(path)) return "white";
+
         return "white";
+    };
+
+    const shouldShowFooter = () => {
+        // Si estás en una ruta tipo /portafolio/lo-que-sea, no mostrar footer
+        if (path.startsWith("/portafolio/") && path !== "/portafolio") {
+            return false;
+        }
+        return true;
     };
 
     const mode = getHeaderMode();
@@ -29,7 +39,7 @@ const MainLayout = () => {
                 <Outlet />
             </main>
 
-            <Footer />
+            {shouldShowFooter() && <Footer />}
         </div>
     );
 };

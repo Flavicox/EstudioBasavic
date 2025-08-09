@@ -1,6 +1,5 @@
-import {PRODUCTS} from "../../../domain/constants/products.ts";
+import { PRODUCTS } from "../../../domain/constants/products.ts";
 import ProductCard from "../../components/ProductCard.tsx";
-
 
 const ProductsPreview = () => {
     return (
@@ -18,16 +17,9 @@ const ProductsPreview = () => {
                             subCategory={product.subCategory}
                             image={product.image}
                             price={product.price}
+                            link={product.marcadoLibre} // 🔹 Le pasamos el enlace
                         />
                     ))}
-                </div>
-                <div className="flex justify-center mt-10 gap-4 flex-wrap">
-                    <a
-                        href="/contacto"
-                        className="bg-[#213358] text-white text-xl px-4 py-2 rounded-md hover:bg-[#0D1E42] transition"
-                    >
-                        Ver Mas
-                    </a>
                 </div>
             </div>
         </section>

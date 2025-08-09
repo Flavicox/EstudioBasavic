@@ -2,6 +2,7 @@ import { useState } from "react";
 import { PORTFOLIO_ITEMS } from "../../domain/constants/portfolio.ts";
 import PortfolioCard from "../components/PortfolioCard.tsx";
 import {PROJECT_TYPE} from "../../domain/constants/projectTypes.ts";
+import { Link } from "react-router";
 
 const Portfolio = () => {
     const [selectedCategory, setSelectedCategory] = useState("todos");
@@ -42,15 +43,13 @@ const Portfolio = () => {
 
             {/* Grid de proyectos filtrados */}
             <div className="grid md:grid-cols-2 lg:grid-cols-3 ">
-                {filteredItems.map((project, index) => (
-                    <PortfolioCard
-                        key={index}
-                        title={project.title}
-                        location={project.location}
-                        year={project.year}
-                        image={project.image}
-                        description={project.description}
-                    />
+                {filteredItems.map((project) => (
+                    <Link key={project.key} to={`/portafolio/${project.key}`}>
+                        <PortfolioCard
+                            title={project.title}
+                            image={project.principalImage}
+                        />
+                    </Link>
                 ))}
             </div>
         </div>

@@ -1,4 +1,4 @@
-import { NavLink } from "react-router";
+import { NavLink, useNavigate } from "react-router";
 import { useEffect, useState } from "react";
 import { Menu, X } from "lucide-react";
 
@@ -9,6 +9,7 @@ interface HeaderProps {
 export const Header = ({ mode = "white" }: HeaderProps) => {
     const [isScrolled, setIsScrolled] = useState(false);
     const [menuOpen, setMenuOpen] = useState(false);
+    const navigate = useNavigate();
 
     useEffect(() => {
         if (mode !== "scroll") return;
@@ -32,6 +33,11 @@ export const Header = ({ mode = "white" }: HeaderProps) => {
 
     const baseLink = `${textColor} px-3 py-2 transition border-b-2 border-transparent hover:border-current`;
     const activeLink = "border-current font-semibold";
+
+    const goToSection = (sectionId: string) => {
+        navigate(`/?scroll=${sectionId}`);
+        setMenuOpen(false);
+    };
 
     return (
         <header className={`fixed top-0 w-full z-50 transition-all duration-300 ${backgroundClass}`}>
@@ -86,7 +92,9 @@ export const Header = ({ mode = "white" }: HeaderProps) => {
                     >
                         Portafolio
                     </NavLink>
-                    <a href="#productos" className={baseLink}>Productos</a>
+                    <button onClick={() => goToSection("productos")} className={baseLink}>
+                        Productos
+                    </button>
                     <NavLink
                         to="/contacto"
                         className={({ isActive }) =>
@@ -108,8 +116,16 @@ export const Header = ({ mode = "white" }: HeaderProps) => {
                         <NavLink to="/nosotros" onClick={() => setMenuOpen(false)}>
                             Nosotros
                         </NavLink>
-                        <a href="#portafolio" onClick={() => setMenuOpen(false)}>Portafolio</a>
-                        <a href="#productos" onClick={() => setMenuOpen(false)}>Productos</a>
+                        <NavLink to="/portafolio" onClick={() => setMenuOpen(false)}>
+                            Portafolio
+                        </NavLink>
+                        <button
+                            onClick={() => goToSection("productos")}
+                            className="text-left"
+                        >
+                            Productos
+                        </button>
+
                         <NavLink to="/contacto" onClick={() => setMenuOpen(false)}>
                             Contacto
                         </NavLink>

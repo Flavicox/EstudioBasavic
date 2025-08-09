@@ -46,39 +46,39 @@ const ContactForm = () => {
     return (
         <form onSubmit={handleSubmit(onSubmit)} className="max-w-xl mx-auto space-y-6">
             <div>
-                <label htmlFor="name" className="block mb-1 font-medium text-[#2C4375]">
+                <label htmlFor="name" className="block mb-1 font-medium text-[#2C4375] text-xl">
                     Nombre
                 </label>
                 <input
                     id="name"
                     {...register("name")}
-                    className="w-full border border-gray-300 rounded px-4 py-2 focus:outline-none focus:ring-2 focus:ring-[#65B2CC]"
+                    className="w-full border rounded px-4 py-2 shadow-md border-[#2C4375] focus:outline-none focus:ring-1 focus:ring-[#2C4375]"
                 />
                 {errors.name && <p className="text-red-600 text-sm mt-1">{errors.name.message}</p>}
             </div>
 
             <div>
-                <label htmlFor="email" className="block mb-1 font-medium text-[#2C4375]">
+                <label htmlFor="email" className="block mb-1 font-medium text-[#2C4375] text-xl">
                     Correo
                 </label>
                 <input
                     id="email"
                     type="email"
                     {...register("email")}
-                    className="w-full border border-gray-300 rounded px-4 py-2 focus:outline-none focus:ring-2 focus:ring-[#65B2CC]"
+                    className="w-full border rounded px-4 py-2 shadow-md border-[#2C4375] focus:outline-none focus:ring-1 ring-[#2C4375]"
                 />
                 {errors.email && <p className="text-red-600 text-sm mt-1">{errors.email.message}</p>}
             </div>
 
             <div>
-                <label htmlFor="message" className="block mb-1 font-medium text-[#2C4375]">
+                <label htmlFor="message" className="block mb-1 font-medium text-[#2C4375] text-xl">
                     Mensaje
                 </label>
                 <textarea
                     id="message"
                     rows={5}
                     {...register("message")}
-                    className="w-full border border-gray-300 rounded px-4 py-2 resize-none focus:outline-none focus:ring-2 focus:ring-[#65B2CC]"
+                    className="w-full border shadow-md border-[#2C4375] rounded px-4 py-2 resize-none focus:outline-none focus:ring-1 ring-[#2C4375]"
                 />
                 {errors.message && <p className="text-red-600 text-sm mt-1">{errors.message.message}</p>}
             </div>
@@ -86,7 +86,7 @@ const ContactForm = () => {
             <button
                 type="submit"
                 disabled={isSubmitting}
-                className="bg-[#65B2CC] text-white px-6 py-3 rounded hover:bg-[#5a9fba] transition disabled:opacity-50"
+                className="bg-[#2C4375] text-white px-4 py-2 rounded text-xl hover:bg-[#0D1E42] transition disabled:opacity-50"
             >
                 {isSubmitting ? "Enviando..." : "Enviar mensaje"}
             </button>

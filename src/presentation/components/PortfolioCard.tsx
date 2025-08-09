@@ -1,9 +1,6 @@
 interface PortfolioCardProps {
     title: string;
-    location: string;
-    year: string;
     image: string;
-    description: string;
 }
 
 const PortfolioCard = ({ title, image }: PortfolioCardProps) => {

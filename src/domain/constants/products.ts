@@ -5,6 +5,7 @@ interface Product {
     category: string;
     subCategory: string;
     price: number;
+    marcadoLibre: string;
 }
 
 export const PRODUCTS: Product[] = [
@@ -21,6 +22,7 @@ export const PRODUCTS: Product[] = [
         category: "Maquetas",
         subCategory: "Arquitectura y Diseño",
         price: 250,
+        marcadoLibre: "https://articulo.mercadolibre.com.pe/MPE-723336542-maqueta-coliseo-romano-3d-modelo-arquitectonico-decorativo-_JM?searchVariation=187996832199#polycard_client=search-nordic&searchVariation=187996832199&position=1&search_layout=stack&type=item&tracking_id=e4656f35-937e-479e-85f0-9efb16c83c0a",
     },
     {
         title: "Lámpara De Mesa Led Orgánica 12cm Pla Luz Ambiental",
@@ -29,6 +31,7 @@ export const PRODUCTS: Product[] = [
         category: "Decohome",
         subCategory: "Iluminacion",
         price: 180,
+        marcadoLibre: "https://articulo.mercadolibre.com.pe/MPE-722556778-lampara-de-mesa-led-organica-12cm-pla-luz-ambiental-_JM?gallery_type=horizontal&sizeForPhoto=416&pdp_filters=seller_id%3A2441102859#polycard_client%3Drecommendations_recoview-selleritems-eshops%26reco_backend%3Dsame-seller-odin%26reco_client%3Drecoview-selleritems-eshops%26reco_item_pos%3D3%26reco_backend_type%3Dlow_level%26reco_id%3De5ada186-793c-4b71-9896-b70f933475dd%26tracking_id%3Da26b0e56-ef80-4d8f-b927-65e16aa4becc%26source%3Deshops%26seller_id%3D2441102859%26category_id%3DMPE7175",
     },
     {
         title: "Santa Sofía De Estambul",
@@ -41,6 +44,7 @@ export const PRODUCTS: Product[] = [
         category: "Maquetas",
         subCategory: "Arquitectura y Diseño",
         price: 250,
+        marcadoLibre: "https://articulo.mercadolibre.com.pe/MPE-723076568-santa-sofia-de-estambul-modelo-de-decoracion-_JM?searchVariation=187996934143#polycard_client=search-nordic&searchVariation=187996934143&position=2&search_layout=stack&type=item&tracking_id=e4656f35-937e-479e-85f0-9efb16c83c0a",
     },
     {
         title: "Lámpara Aesthetic Led Plástico 22cm Luz Cálida",
@@ -72,6 +76,7 @@ export const PRODUCTS: Product[] = [
         category: "Decohome",
         subCategory: "Iluminacion",
         price: 220,
+        marcadoLibre: "https://articulo.mercadolibre.com.pe/MPE-723206414-lampara-aesthetic-led-plastico-22cm-luz-calida-_JM?gallery_type=horizontal&sizeForPhoto=416&pdp_filters=seller_id%3A2441102859#polycard_client%3Drecommendations_recoview-selleritems-eshops%26reco_backend%3Dsame-seller-odin%26reco_client%3Drecoview-selleritems-eshops%26reco_item_pos%3D4%26reco_backend_type%3Dlow_level%26reco_id%3De5ada186-793c-4b71-9896-b70f933475dd%26tracking_id%3Da26b0e56-ef80-4d8f-b927-65e16aa4becc%26source%3Deshops%26seller_id%3D2441102859%26category_id%3DMPE7175",
     },
     {
         title: "Abadía De Cluny",
@@ -85,5 +90,6 @@ export const PRODUCTS: Product[] = [
         category: "Maquetas",
         subCategory: "Arquitectura y Diseño",
         price: 250,
+        marcadoLibre: "https://articulo.mercadolibre.com.pe/MPE-723284574-abadia-de-cluny-modelo-arquitectonico-para-decoracion-_JM?searchVariation=183644368244#polycard_client=search-nordic&searchVariation=183644368244&position=3&search_layout=stack&type=item&tracking_id=e4656f35-937e-479e-85f0-9efb16c83c0a",
     },
 ];

@@ -4,11 +4,21 @@ interface ProductCardProps {
     subCategory: string;
     image: string;
     price: number;
+    link?: string; // 🔹 Nueva propiedad para la URL
 }
 
-const ProductCard = ({ title, category, subCategory, image, price }: ProductCardProps) => {
+const ProductCard = ({ title, category, subCategory, image, price, link }: ProductCardProps) => {
+    const handleClick = () => {
+        if (link) {
+            window.open(link, "_blank"); // Abre en nueva pestaña
+        }
+    };
+
     return (
-        <div className="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition">
+        <div
+            onClick={handleClick}
+            className="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition cursor-pointer"
+        >
             <img
                 src={image}
                 alt={title}

@@ -1,5 +1,6 @@
 import { PORTFOLIO_ITEMS } from "../../../domain/constants/portfolio";
 import PortfolioCard from "../../components/PortfolioCard.tsx";
+import {Link} from "react-router";
 
 
 const PortfolioHighlights = () => {
@@ -10,20 +11,18 @@ const PortfolioHighlights = () => {
                     PROYECTOS DESTACADOS
                 </h2>
                 <div className="grid md:grid-cols-2 lg:grid-cols-3">
-                    {PORTFOLIO_ITEMS.map((project, index) => (
-                        <PortfolioCard
-                            key={index}
-                            title={project.title}
-                            location={project.location}
-                            year={project.year}
-                            image={project.image}
-                            description={project.description}
-                        />
+                    {PORTFOLIO_ITEMS.map((project) => (
+                        <Link key={project.key} to={`/portafolio/${project.key}`}>
+                            <PortfolioCard
+                                title={project.title}
+                                image={project.principalImage}
+                            />
+                        </Link>
                     ))}
                 </div>
                 <div className="flex gap-4 flex-wrap">
                     <a
-                        href="#portafolio"
+                        href="/portafolio"
                         className="bg-transparent border-2 text-white text-xl px-4 py-2 rounded-md hover:bg-white/20 transition"
                     >
                         Ver Mas Proyectos
