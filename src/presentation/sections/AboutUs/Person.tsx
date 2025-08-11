@@ -5,10 +5,10 @@ const Persons = () => {
             <div className="flex flex-col lg:flex-row items-center justify-center gap-10 max-w-7xl mx-auto mb-10">
                 {/* Texto */}
                 <div className="flex-1 px-2 md:px-0">
-                    <h1 className="text-4xl text-[#2C4375] text-center lg:text-right mb-5 w-full">
+                    <h1 className=" text-2xl sm:text-3xl lg:text-4xl text-[#2C4375] text-center lg:text-right mb-5 w-full">
                         FLAVIA VILLACORTA
                     </h1>
-                    <h2 className="text-3xl text-[#2C4375] text-center lg:text-right mb-12 w-full">
+                    <h2 className="text-xl sm:text-2xl lg:text-3xl text-[#2C4375] text-center lg:text-right mb-12 w-full">
                         Co-fundadora de Estudio Basavic
                     </h2>
                     <p className="text-[#2C4375] text-base sm:text-lg md:text-xl lg:text-xl text-justify lg:text-right">
@@ -30,10 +30,10 @@ const Persons = () => {
 
                 {/* Texto */}
                 <div className="flex-1 px-2 md:px-0">
-                    <h1 className="text-4xl text-[#2C4375] text-center lg:text-left mb-5 w-full">
+                    <h1 className="text-2xl sm:text-3xl lg:text-4xl text-[#2C4375] text-center lg:text-left mb-5 w-full">
                         CRISTIAN BARRERA
                     </h1>
-                    <h2 className="text-3xl text-[#2C4375] text-center lg:text-left mb-12 w-full">
+                    <h2 className="text-xl sm:text-2xl lg:text-3xl text-[#2C4375] text-center lg:text-left mb-12 w-full">
                         Co-fundador de Estudio Basavic
                     </h2>
                     <p className="text-[#2C4375] text-base sm:text-lg md:text-xl lg:text-xl text-justify lg:text-left">

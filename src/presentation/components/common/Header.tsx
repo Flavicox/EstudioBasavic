@@ -108,8 +108,8 @@ export const Header = ({ mode = "white" }: HeaderProps) => {
                         <NavLink to="/nosotros" onClick={() => setMenuOpen(false)}>
                             Nosotros
                         </NavLink>
-                        <NavLink to="/nosotros" onClick={() => setMenuOpen(false)}>
-                            Nosotros
+                        <NavLink to="/portafolio" onClick={() => setMenuOpen(false)}>
+                            Portafolio
                         </NavLink>
                         {/*<a href="#productos" onClick={() => setMenuOpen(false)}>Productos</a>*/}
                         <NavLink to="/contacto" onClick={() => setMenuOpen(false)}>
