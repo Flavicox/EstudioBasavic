@@ -11,7 +11,7 @@ export default function LampsHeader() {
     const activeLink = "border-black font-semibold";
 
     return (
-        <header className="w-full sticky top-0 z-40 bg-[#F4F4F4]">
+        <header className="w-full sticky top-0 z-40 bg-[#F4F4F4] shadow-md">
             <div className="container mx-auto px-4 py-3 flex items-center justify-between">
                 {/* Logo (izquierda) */}
                 <NavLink to="/" end>
@@ -35,25 +35,33 @@ export default function LampsHeader() {
                 <nav className="hidden md:flex items-center space-x-8">
                     <NavLink
                         to="/lamparas/comprar"
-                        className={({ isActive }) => `${baseLink} ${isActive ? activeLink : ""}`}
+                        className={({ isActive }) =>
+                            `${baseLink} ${isActive ? activeLink : ""}`
+                        }
                     >
                         Comprar
                     </NavLink>
                     <NavLink
-                        to="/lamparas/fabricacion"
-                        className={({ isActive }) => `${baseLink} ${isActive ? activeLink : ""}`}
+                        to="/productos/hogar/lamparas/fabricacion"
+                        className={({ isActive }) =>
+                            `${baseLink} ${isActive ? activeLink : ""}`
+                        }
                     >
                         Fabricación
                     </NavLink>
-                    {/*<NavLink*/}
-                    {/*    to="/nosotros"*/}
-                    {/*    className={({ isActive }) => `${baseLink} ${isActive ? activeLink : ""}`}*/}
-                    {/*>*/}
-                    {/*    Nosotros*/}
-                    {/*</NavLink>*/}
+                    {/*<NavLink
+                        to="/nosotros"
+                        className={({ isActive }) =>
+                            `${baseLink} ${isActive ? activeLink : ""}`
+                        }
+                    >
+                        Nosotros
+                    </NavLink>*/}
                     <NavLink
                         to="/lamparas/disena"
-                        className={({ isActive }) => `${baseLink} ${isActive ? activeLink : ""}`}
+                        className={({ isActive }) =>
+                            `${baseLink} ${isActive ? activeLink : ""}`
+                        }
                     >
                         Diseña tu Lámpara
                     </NavLink>
@@ -62,7 +70,7 @@ export default function LampsHeader() {
 
             {/* Menú móvil desplegado */}
             {menuOpen && (
-                <div className="md:hidden bg-[#F4F4F4] border-t border-black/10">
+                <div className="md:hidden bg-[#F4F4F4] border-t border-black/10 shadow-inner">
                     <nav
                         className="flex flex-col px-4 py-3 space-y-3 text-black"
                         onClick={() => setMenuOpen(false)}
@@ -73,9 +81,9 @@ export default function LampsHeader() {
                         <NavLink to="/lamparas/fabricacion" className="py-1">
                             Fabricación
                         </NavLink>
-                        {/*<NavLink to="/nosotros" className="py-1">*/}
-                        {/*    Nosotros*/}
-                        {/*</NavLink>*/}
+                        {/*<NavLink to="/nosotros" className="py-1">
+                            Nosotros
+                        </NavLink>*/}
                         <NavLink to="/lamparas/disena" className="py-1">
                             Diseña tu Lámpara
                         </NavLink>

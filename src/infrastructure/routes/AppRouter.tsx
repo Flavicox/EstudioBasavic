@@ -7,6 +7,7 @@ import Portfolio from "../../presentation/pages/Portfolio.tsx";
 import Project from "../../presentation/pages/Project.tsx";
 import LampsLayout from "../../presentation/layout/LampsLayout.tsx";
 import LampsHome from "../../presentation/pages/Lamps/LampsHome.tsx";
+import LampsFabricacion from "../../presentation/pages/Lamps/LampsFabricacion.tsx";
 
 export const router = createBrowserRouter([
     {
@@ -32,7 +33,7 @@ export const router = createBrowserRouter([
                         element: <LampsLayout/>,
                         children: [
                             { index: true, element: <LampsHome /> },
-                            { path: "", element: "" }
+                            { path: "fabricacion", element: <LampsFabricacion/> }
                         ],
                     }
 
