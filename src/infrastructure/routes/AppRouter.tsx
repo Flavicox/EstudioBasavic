@@ -7,7 +7,10 @@ import Portfolio from "../../presentation/pages/Portfolio.tsx";
 import Project from "../../presentation/pages/Project.tsx";
 import LampsLayout from "../../presentation/layout/LampsLayout.tsx";
 import LampsHome from "../../presentation/pages/Lamps/LampsHome.tsx";
-import LampsFabricacion from "../../presentation/pages/Lamps/LampsFabricacion.tsx";
+import LampsFabrication from "../../presentation/pages/Lamps/LampsFabrication.tsx";
+import LampsFabricationCraft from "../../presentation/pages/Lamps/LampsFabricationCraft.tsx";
+import LampDetail from "../../presentation/pages/Lamps/LampDetail.tsx";
+import LampsCustom from "../../presentation/pages/Lamps/LampsCustom";
 
 export const router = createBrowserRouter([
     {
@@ -30,15 +33,20 @@ export const router = createBrowserRouter([
                 children: [
                     {
                         path: "lamparas",
-                        element: <LampsLayout/>,
+                        element: <LampsLayout />,
                         children: [
                             { index: true, element: <LampsHome /> },
-                            { path: "fabricacion", element: <LampsFabricacion/> }
+                            { path: "fabricacion", element: <LampsFabrication /> },
+                            {
+                                path: "fabricacion/acabado-artesanal",
+                                element: <LampsFabricationCraft />,
+                            },
+                            { path: ":slug", element: <LampDetail /> },
+                            { path: "disena-tu-lampara", element: <LampsCustom /> },
                         ],
                     }
-
-                ]
-            }
-        ]
-    }
+                ],
+            },
+        ],
+    },
 ]);

@@ -1,14 +1,11 @@
-import WhoWeAre from "../sections/AboutUs/WhoWeAre.tsx";
-import Persons from "../sections/AboutUs/Person.tsx";
+import AboutUsSection from "../sections/AboutUs/AboutUsSection";
 
 const AboutUs = () => {
-
     return (
-        <div className="">
-            <WhoWeAre />
-            <Persons />
-        </div>
+        <main className="bg-[#E9E9E9] text-[#3D2F3D] min-h-screen">
+            <AboutUsSection />
+        </main>
     );
-}
+};
 
 export default AboutUs;

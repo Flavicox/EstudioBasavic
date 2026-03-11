@@ -1,6 +1,6 @@
 const HeroSection = () => {
     return (
-        <section className="relative h-screen bg-cover bg-center bg-no-repeat bg-[url('/FachadaIglesia.jpg')]" id="inicio">
+        <section className="relative h-screen bg-cover bg-center bg-no-repeat bg-[url('/Banner1.jpeg')]" id="inicio">
             {/* Degradado overlay */}
             <div className="absolute inset-0 bg-gradient-to-r from-black/95 via-black/90 to-transparent z-10"></div>
             {/* Contenido alineado a la izquierda */}
