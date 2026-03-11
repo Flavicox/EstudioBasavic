@@ -6,7 +6,7 @@ const HeroSection = () => {
             {/* Contenido alineado a la izquierda */}
             <div className="relative z-20 container mx-auto px-4 h-full flex flex-col justify-center items-start text-white">
                 <h1 className="text-3xl md:text-4xl mb-6 max-w-xl">
-                    ¡Bienvenid@ a Estudio Bassavic!
+                    ¡Bienvenid@ a Estudio Basavic!
                 </h1>
                 <p className="text-lg max-w-xl mb-8">
                     Somos un equipo creativo que fusiona arquitectura, diseño e ingeniería con tecnología de impresión 3D para construir espacios y objetos funcionales, innovadores y personalizados.

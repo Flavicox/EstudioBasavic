@@ -67,16 +67,13 @@ export default function LampsHeader() {
                         className="flex flex-col px-4 py-3 space-y-3 text-black"
                         onClick={() => setMenuOpen(false)}
                     >
-                        <NavLink to="/lamparas/comprar" className="py-1">
+                        <a href="https://wa.me/c/51992266070" className="py-1" target="_blank" rel="noopener noreferrer">
                             Comprar
-                        </NavLink>
-                        <NavLink to="/lamparas/fabricacion" className="py-1">
+                        </a>
+                        <NavLink to="/productos/hogar/lamparas/fabricacion" className="py-1">
                             Fabricación
                         </NavLink>
-                        {/*<NavLink to="/nosotros" className="py-1">
-                            Nosotros
-                        </NavLink>*/}
-                        <NavLink to="/lamparas/disena" className="py-1">
+                        <NavLink to="/productos/hogar/lamparas/disena-tu-lampara" className="py-1">
                             Diseña tu Lámpara
                         </NavLink>
                     </nav>
