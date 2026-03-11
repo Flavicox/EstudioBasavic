@@ -33,14 +33,14 @@ export default function LampsHeader() {
 
                 {/* Navegación (derecha - desktop) */}
                 <nav className="hidden md:flex items-center space-x-8">
-                    <NavLink
-                        to="/lamparas/comprar"
-                        className={({ isActive }) =>
-                            `${baseLink} ${isActive ? activeLink : ""}`
-                        }
+                    <a
+                        href="https://wa.me/c/51992266070"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className={baseLink}
                     >
                         Comprar
-                    </NavLink>
+                    </a>
                     <NavLink
                         to="/productos/hogar/lamparas/fabricacion"
                         className={({ isActive }) =>
@@ -49,16 +49,8 @@ export default function LampsHeader() {
                     >
                         Fabricación
                     </NavLink>
-                    {/*<NavLink
-                        to="/nosotros"
-                        className={({ isActive }) =>
-                            `${baseLink} ${isActive ? activeLink : ""}`
-                        }
-                    >
-                        Nosotros
-                    </NavLink>*/}
                     <NavLink
-                        to="/lamparas/disena"
+                        to="/productos/hogar/lamparas/disena-tu-lampara"
                         className={({ isActive }) =>
                             `${baseLink} ${isActive ? activeLink : ""}`
                         }

@@ -1,9 +1,22 @@
 import LampsFabricationVideoSection from "../../sections/LampsFabrication/LampsFabricationVideoSection.tsx";
+import {Link} from "react-router";
+import {IoArrowBack} from "react-icons/io5";
 
 export default function LampsFabrication() {
     return (
         <main className="bg-[#E9E9E9] text-black">
-            <section className="w-full py-20">
+
+            {/* BOTÓN REGRESAR */}
+            <div className="max-w-[1200px] mx-auto px-6 pt-10">
+                <Link
+                    to="/productos/hogar/lamparas"
+                    className="inline-flex items-center gap-2 italic text-lg md:text-xl hover:opacity-70 transition"
+                >
+                    <IoArrowBack className="text-2xl" />
+                    <span>Regresar al catálogo</span>
+                </Link>
+            </div>
+            <section className="w-full py-10">
                 <div className="container mx-auto px-4 pb-8">
                     <div className="flex justify-center">
                         <img
