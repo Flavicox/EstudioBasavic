@@ -18,7 +18,7 @@ export default function LampCard({ imageSrc, title, href }: Props) {
                     loading="lazy"
                 />
             </div>
-            <p className="mt-3 text-[18px] md:text-[20px] font-semibold tracking-wide text-center">
+            <p className="mt-3 text-[18px] md:text-[20px] tracking-wide text-center">
                 {title}
             </p>
         </figure>

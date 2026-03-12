@@ -25,7 +25,7 @@ export default function LampsWelcomeSection({
             <div className="absolute inset-0 flex items-center justify-center px-4 pointer-events-none">
                 <div className="absolute inset-0 bg-gradient-to-b from-black/35 via-black/15 to-transparent" />
                 <div className="relative z-10 max-w-4xl text-center pointer-events-auto">
-                    <h2 className="text-[#f4f4f4] text-2xl md:text-4xl lg:text-6xl font-semibold tracking-wide mb-4">
+                    <h2 className="text-[#f4f4f4] text-2xl md:text-4xl lg:text-6xl tracking-wide mb-4">
                         {headline}
                     </h2>
                     <p className="text-[#f4f4f4]/90 leading-relaxed mb-3 text-sm md:text-lg lg:text-xl">{paragraph1}</p>

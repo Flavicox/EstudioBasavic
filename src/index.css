@@ -1,6 +1,27 @@
-@import url('https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&display=swap');
 @import "tailwindcss";
 
+/* Garet Regular */
+@font-face {
+    font-family: "Garet";
+    src: url("/fonts/Garet-Book.ttf") format("truetype");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* Garet Bold */
+@font-face {
+    font-family: "Garet";
+    src: url("/fonts/Garet-Heavy.ttf") format("truetype");
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
 @theme {
-    --font-sans: 'Instrument Sans', sans-serif;
+    --font-sans: "Garet", sans-serif;
+}
+
+body {
+    font-family: "Garet", sans-serif;
 }

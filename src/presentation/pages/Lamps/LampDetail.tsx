@@ -184,7 +184,7 @@ export default function LampDetail() {
                             <button
                                 type="button"
                                 onClick={handlePurchase}
-                                className="min-w-[240px] md:min-w-[300px] rounded-full bg-[#DDD9D7] px-6 py-3 text-[18px] md:text-[20px] font-semibold text-[#3D2F3D] shadow-sm hover:shadow-md hover:opacity-85 transition"
+                                className="min-w-[240px] md:min-w-[300px] rounded-full bg-[#DDD9D7] px-6 py-3 text-[18px] md:text-[20px] font-semibold text-[#3D2F3D] shadow-sm hover:shadow-md hover:opacity-85 transition cursor-pointer"
                             >
                                 {lamp.purchaseLabel || `Adquirir Lámpara ${lamp.name}`}
                             </button>

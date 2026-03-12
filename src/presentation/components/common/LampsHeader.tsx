@@ -7,7 +7,7 @@ export default function LampsHeader() {
     const [menuOpen, setMenuOpen] = useState(false);
 
     const baseLink =
-        "px-3 py-2 text-black border-b-2 border-transparent hover:border-black transition";
+        "px-3 py-2 text-black border-b-2 hover:border-black transition border-transparent";
     const activeLink = "border-black font-semibold";
 
     return (
