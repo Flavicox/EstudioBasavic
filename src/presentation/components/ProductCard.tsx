@@ -7,7 +7,7 @@ interface ProductCardProps {
     link?: string; // 🔹 Nueva propiedad para la URL
 }
 
-const ProductCard = ({ title, category, subCategory, image, price, link }: ProductCardProps) => {
+const ProductCard = ({ title, category, subCategory, image, link }: ProductCardProps) => {
     const handleClick = () => {
         if (link) {
             window.open(link, "_blank"); // Abre en nueva pestaña
@@ -25,9 +25,8 @@ const ProductCard = ({ title, category, subCategory, image, price, link }: Produ
                 className="w-full h-72 object-contain bg-white"
             />
             <div className="p-4">
-                <h3 className="text-lg font-semibold text-[#2C4375] mb-1">{title}</h3>
+                <h3 className="text-lg  text-[#2C4375] mb-1">{title}</h3>
                 <p className="text-sm text-gray-500 mb-2">{category} • {subCategory}</p>
-                <p className="text-base font-bold text-[#2C4375]">S/. {price}</p>
             </div>
         </div>
     );
